@@ -1,16 +1,16 @@
 <!-- vscode-markdown-toc -->
-
-- 1. [Binary search](#Binarysearch)
-  - 1.1. [A Better way to search](#ABetterwaytosearch)
-- 2. [Example](#Example)
+# Table of Contents
+- [Binary search](#Binarysearch)
+- [A Better way to search](#ABetterwaytosearch)
+- [Examples](#Example)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
 	autoSave=true
 	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc --># Binary Search in Python
+<!-- /vscode-markdown-toc -->
 
-## 1. <a name='Binarysearch'></a>Binary search
+## <a name='Binarysearch'></a>Binary search
 
 Binary search is an algorithm; its input is a sorted list of elements. If an element you are looking for is in that list, binary search returns the position where it's located. Otherwise, binary search returns `null`.
 
@@ -26,7 +26,7 @@ Suppose you start guessing like this 1, 2, 3, 4 .... If the number I am thinking
 
 This is _simple search_, and it is not effective.
 
-### 1.1. <a name='ABetterwaytosearch'></a>A Better way to search
+### <a name='ABetterwaytosearch'></a>A Better way to search
 
 A better technique. Start with 50. If the number I am thinking of is 99, 50 is too low. But you just eliminated nos 1-50 (50 tries) in 1 try.
 
@@ -41,7 +41,7 @@ Now you have 3 nos remaining. You'll have gotten the number I'm thinking of in 6
 
 ![](/static/7_steps.PNG)
 
-## 2. <a name='Example'></a>Example
+### <a name='Example'></a>Example
 
 ```
 
