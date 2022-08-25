@@ -2,7 +2,7 @@
 # Table of Contents
 - [Binary search](#Binarysearch)
 - [A Better way to search](#ABetterwaytosearch)
-- [Examples](#Example)
+- [Example](#Example)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -42,7 +42,6 @@ Now you have 3 nos remaining. You'll have gotten the number I'm thinking of in 6
 ![](/static/7_steps.PNG)
 
 ### <a name='Example'></a>Example
+Let's take a look at how to write a binary search in Python. 
+![](/static/python_binary_search.PNG)
 
-```
-
-```
