@@ -43,7 +43,7 @@ Now you have 3 nos remaining. You'll have gotten the number I'm thinking of in 6
 
 ### <a name='Example'></a>Example
 Let's take a look at how to write a binary search in Python. 
-```
+```python
 def binary_search(list, item):
     """
     This function takes a sorted array and an item. 
