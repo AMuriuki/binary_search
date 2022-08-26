@@ -1,5 +1,7 @@
 <!-- vscode-markdown-toc -->
+
 # Table of Contents
+
 - [Binary search](#Binarysearch)
 - [A Better way to search](#ABetterwaytosearch)
 - [Example](#Example)
@@ -42,12 +44,57 @@ Now you have 3 nos remaining. You'll have gotten the number I'm thinking of in 6
 ![](/static/7_steps.PNG)
 
 ### <a name='Example'></a>Example
-Let's take a look at how to write a binary search in Python. 
+
+Let's take a look at how to write a binary search in Python. To fully understand the code below you'll need some understanding of how arrays work.
+
+We'll write a function, `binary_search`, that takes a sorted array and an item (that we'll search for). If the item is in the array, the function returns the item's position. The function will keep track of what part of the array has been searched through.
+
+The first execution of the array will assign two variables as below:
+
+```python
+low = 0
+high = len(list) - 1
+```
+
+These two will help us keep track of what part of the list to search. The function will loop while checking for a new middle element that'll either be higher, lower or equal to the item we are searching for.
+
+Here is how the function checks for the middle element:
+
+> NB: `mid` is the position of the middle element within the array, not the actual element. Python rounds it down automatically if `(low+high)` is not an even number. The actual element is retrieved as follows `guess = list[mid]`
+
+```python
+mid = (low + high) / 2
+guess = list[mid]
+```
+
+If the `guess` is too low, the `low` variable is updated:
+
+```python
+if guess < item:
+    low = mid + 1
+```
+
+And if the `guess` is too high, we update the `high` variable.
+
+```python
+if guess > item:
+    high = mid + 1
+```
+
+If the `guess` is equal to `item` it means we've found the item. So we return its position.
+
+```python
+if guess == item:
+    return mid
+```
+
+Here's the full code:
+
 ```python
 def binary_search(list, item):
     """
-    This function takes a sorted array and an item. 
-    If the item is in the array, the function returns its position. 
+    This function takes a sorted array and an item.
+    If the item is in the array, the function returns its position.
     """
     # high & low check what part of the list to search
     low = 0
